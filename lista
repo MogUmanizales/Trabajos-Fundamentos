@@ -1,0 +1,20 @@
+import random
+#lista con numeros enteros aleatorios 
+lista = random.sample(range(1, 21), 10)
+
+# Imprimir la lista generada
+print("Lista generada: ", lista)
+
+# Leer un valor desde el usuario
+valor = int(input("Ingrese un valor: "))
+
+# Buscar el valor en la lista y restarle -1 si se encuentra
+if valor in lista:
+    repeticiones = lista.count(valor)
+    print("El valor", valor, "fue encontrado en la lista y se le restó -1")
+    print("El valor", valor, "se repite", repeticiones, "veces en la lista")
+else:
+    print("El valor", valor, "no fue encontrado en la lista")
+
+# Imprimir la lista modificada 
+print("Lista modificada: ", lista)
